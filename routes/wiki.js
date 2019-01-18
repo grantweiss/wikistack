@@ -1,9 +1,10 @@
 const express     = require('express');
 const router      = express.Router()
 const { addPage } = require('../views')
+const layout      = require('../views/layout');
 
 router.get('/', (req, res) => {
-  res.send('got to GET /wiki/');
+  res.send(layout(''));
 });
 
 router.post('/', (req, res) => {
