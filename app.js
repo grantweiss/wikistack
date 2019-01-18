@@ -2,7 +2,7 @@ const express  = require('express');
 const morgan   = require('morgan');
 const routes   = require('./routes/index')
 const app      = express();
-const main     = require('./views/index');
+const main     = require('./views');
 
 
 app.use(express.json());
