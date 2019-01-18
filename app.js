@@ -2,7 +2,7 @@ const express  = require('express');
 const morgan   = require('morgan');
 const routes   = require('./routes/index')
 const app      = express();
-const main     = require('./views');
+const layout   = require('./views/layout');
 
 
 app.use(express.json());
@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', (req, res) => {
-  res.send(main(''));
+  res.send(layout(''));
 });
 
 const PORT = 1337;
