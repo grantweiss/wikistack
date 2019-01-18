@@ -1,0 +1,27 @@
+{
+  "name": "wikistack",
+  "version": "1.0.0",
+  "description": "wikiStack project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grantweiss/wikistack.git"
+  },
+  "author": "Tom and Grant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grantweiss/wikistack/issues"
+  },
+  "homepage": "https://github.com/grantweiss/wikistack#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}
