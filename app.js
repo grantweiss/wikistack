@@ -2,6 +2,7 @@ const express  = require('express');
 const morgan   = require('morgan');
 const routes   = require('./routes/index')
 const app      = express();
+const main     = require('./views/index');
 
 
 app.use(express.json());
@@ -14,7 +15,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', (req, res) => {
-  res.send('Hello world!')
+  res.send(main(''));
 });
 
 const PORT = 1337;
